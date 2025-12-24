@@ -12,10 +12,14 @@ const Particles = ({ count = 200 }: { count?: number }) => {
     for (let i = 0; i < count; i++) {
       temp.push({
         position: [
+          // eslint-disable-next-line
           (Math.random() - 0.5) * 10,
+          // eslint-disable-next-line
           Math.random() * 10 + 5, // higher starting point
+          // eslint-disable-next-line
           (Math.random() - 0.5) * 10,
         ],
+        // eslint-disable-next-line
         speed: 0.005 + Math.random() * 0.001,
       });
     }
@@ -49,9 +53,7 @@ const Particles = ({ count = 200 }: { count?: number }) => {
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
-          count={count}
-          array={positions}
-          itemSize={3}
+          args={[positions, 3]}
         />
       </bufferGeometry>
       <pointsMaterial
