@@ -320,7 +320,7 @@ export default function ProjectDetails() {
           </a>
         )}
 
-        <Link href="/#work" className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all duration-300 backdrop-blur-md border border-white/10">View More Projects</Link>
+        <Link href="/work" className="inline-flex items-center gap-3 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl transition-all duration-300 backdrop-blur-md border border-white/10">View More Projects</Link>
       </div>
     </div>
   );
