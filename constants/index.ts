@@ -345,7 +345,7 @@ const socialImgs: SocialImg[] = [
 
 // My Projects
 const myProjects: Project[] = [
-  // Project 1 [Hong Kong]
+  // Project 1 [Mac Portfolio]
   {
     id: 1,
     title: "Mac Portfolio",
@@ -401,7 +401,7 @@ const myProjects: Project[] = [
       "It relies on an advanced authentication system featuring JWT tokens and OTP verification, with state management handled via React Context.",
       "The application communicates with a backend API using axios with intelligent error handling and automatic retry mechanisms, providing a smooth user experience across all devices."
     ],
-    href: "https://kasseb-website.vercel.app/en",
+    href: "https://sportshubbh.com",
     spotlight: "/images/projects/sports-hub/cover.png",
     buildWith: ["Next", "Type Script"],
     github: null,
