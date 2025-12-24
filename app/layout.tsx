@@ -11,8 +11,11 @@ const monaSans = Mona_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "ِAbdelRahman",
   description: "Professional portfolio built with Next.js",
+  icons: {
+    icon: "/favIcon.png",
+  },
 };
 
 export default function RootLayout({

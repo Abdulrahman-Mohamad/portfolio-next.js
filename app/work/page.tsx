@@ -1,7 +1,7 @@
 import MyProject from "@/sections/MyProject";
 
 export const metadata = {
-  title: "My Work | AbdelRahman",
+  title: "Projects | AbdelRahman",
   description: "Explore my selected projects and professional work.",
 };
 
