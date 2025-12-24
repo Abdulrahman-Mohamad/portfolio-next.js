@@ -11,7 +11,6 @@ export default function Footer() {
             Visit my blog
           </Link>
         </div>
-
         <div className="socials">
           {socialImgs.map((img) => (
             <a
@@ -31,7 +30,6 @@ export default function Footer() {
             </a>
           ))}
         </div>
-
         <div className="flex flex-col justify-center">
           <p className="text-center md:text-end">
             © {new Date().getFullYear()} AbdelRahman Mohamad. All rights reserved.
