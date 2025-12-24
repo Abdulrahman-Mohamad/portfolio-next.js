@@ -1,12 +1,14 @@
-import React from 'react';
+import Contact from "@/sections/Contact";
 
-const Contact = () => {
-  return (
-    <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold">Contact</h1>
-      <p>Content for contact will go here.</p>
-    </div>
-  );
+export const metadata = {
+  title: "Contact | AbdelRahman",
+  description: "Get in touch with me for collaborations or inquiries.",
 };
 
-export default Contact;
+export default function ContactPage() {
+  return (
+    <div className="pt-20">
+      <Contact />
+    </div>
+  );
+}
