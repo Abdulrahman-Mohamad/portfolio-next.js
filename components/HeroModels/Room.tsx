@@ -45,7 +45,7 @@ export function Room(props: any) {
       <EffectComposer>
         <SelectiveBloom
           selection={screensRef}
-          intensity={1.5} // Strength of the bloom
+          intensity={0} // Strength of the bloom (Set to 0 to remove green glow)
           luminanceThreshold={0.2} // Minimum luminance needed
           luminanceSmoothing={0.9} // Smooth transition
           blendFunction={BlendFunction.ADD} // How it blends
