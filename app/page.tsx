@@ -1,6 +1,6 @@
 import Hero from '@/sections/Hero'
-// import MyProject from '@/sections/MyProject'
-// import LogoSection from '@/sections/LogoSection'
+import MyProject from '@/sections/MyProject'
+import LogoSection from '@/sections/LogoSection'
 // import FeatureCards from '@/sections/FeatureCards'
 // import ExperienceSection from '@/sections/ExperienceSection'
 // import TechStack from '@/sections/TechStack'
@@ -11,8 +11,8 @@ export default function Home() {
   return <>
     <div className='space-y-20'>
       <Hero />
-      {/* <MyProject /> */}
-      {/* <LogoSection /> */}
+      <MyProject />
+      <LogoSection />
       {/* <FeatureCards /> */}
       {/* <ExperienceSection /> */}
       {/* <TechStack /> */}

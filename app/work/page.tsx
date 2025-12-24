@@ -1,12 +1,14 @@
-import React from 'react';
+import MyProject from "@/sections/MyProject";
 
-const MyProject = () => {
-  return (
-    <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold">My Projects</h1>
-      <p>Content for projects will go here.</p>
-    </div>
-  );
+export const metadata = {
+  title: "My Work | AbdelRahman",
+  description: "Explore my selected projects and professional work.",
 };
 
-export default MyProject;
+export default function WorkPage() {
+  return (
+    <div className="pt-20">
+      <MyProject />
+    </div>
+  );
+}
