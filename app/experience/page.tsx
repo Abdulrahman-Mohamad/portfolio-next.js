@@ -1,12 +1,14 @@
-import React from 'react';
+import ExperienceSection from "@/sections/ExperienceSection";
 
-const ExperienceSection = () => {
-  return (
-    <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold">Experience</h1>
-      <p>Content for experience will go here.</p>
-    </div>
-  );
+export const metadata = {
+  title: "Experience | AbdelRahman",
+  description: "My professional journey and work experience.",
 };
 
-export default ExperienceSection;
+export default function ExperiencePage() {
+  return (
+    <div className="pt-20">
+      <ExperienceSection />
+    </div>
+  );
+}

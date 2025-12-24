@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import { myProjects } from "@/constants";
@@ -113,11 +114,11 @@ const MyProject = () => {
 
             {/* Project Image */}
             <div className="relative w-full h-64 rounded-2xl overflow-hidden mb-6">
-              <img
+              <Image
                 src={project.spotlight}
                 alt={project.title}
-                loading="lazy"
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                fill
+                className="object-cover transform group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
             </div>
@@ -129,9 +130,15 @@ const MyProject = () => {
                   {project.title}
                 </h3>
                 <div className="flex gap-2">
-                  {project.tags.map((tag) => (
-                    <div key={tag.id} className="w-8 h-8 rounded-full bg-black/50 flex items-center justify-center border border-white/10 p-1.5" title={tag.name}>
-                      <img src={tag.path} alt={tag.name} loading="lazy" className="w-full h-full object-contain" />
+                  {project.tags.map((tag, tagIndex) => (
+                    <div key={`${project.id}-${tag.id}-${tagIndex}`} className="w-8 h-8 rounded-full bg-black/50 flex items-center justify-center border border-white/10 p-1.5" title={tag.name}>
+                      <Image
+                        src={tag.path}
+                        alt={tag.name}
+                        width={24}
+                        height={24}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                   ))}
                 </div>

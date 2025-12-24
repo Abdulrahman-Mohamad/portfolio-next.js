@@ -1,12 +1,14 @@
-import React from 'react';
+import Testimonials from "@/sections/Testimonials";
 
-const Testimonials = () => {
-  return (
-    <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold">Testimonials</h1>
-      <p>Content for testimonials will go here.</p>
-    </div>
-  );
+export const metadata = {
+  title: "Testimonials | AbdelRahman",
+  description: "What clients and colleagues say about my work.",
 };
 
-export default Testimonials;
+export default function TestimonialsPage() {
+  return (
+    <div className="pt-20">
+      <Testimonials />
+    </div>
+  );
+}

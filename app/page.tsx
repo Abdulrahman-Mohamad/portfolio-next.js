@@ -5,7 +5,7 @@ import FeatureCards from '@/sections/FeatureCards'
 import ExperienceSection from '@/sections/ExperienceSection'
 import TechStack from '@/sections/TechStack'
 import Testimonials from '@/sections/Testimonials'
-// import Contact from '@/sections/Contact'
+import Contact from '@/sections/Contact'
 
 export default function Home() {
   return <>
@@ -17,7 +17,7 @@ export default function Home() {
       <ExperienceSection />
       <TechStack />
       <Testimonials />
-      {/* <Contact /> */}
+      <Contact />
     </div>
   </>
 }
